@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+# Wait for permissions to be set
+sleep 3
+
+# Run installation script as the abc user
+su abc -c "/usr/local/bin/install-ivms.sh"

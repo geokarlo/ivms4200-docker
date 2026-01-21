@@ -1,14 +1,29 @@
 services:
   ivms4200:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ivms4200:3.5.0.9
     container_name: ivms4200
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=UTC
+      - TZ=Asia/Manila
+      - UMASK=022
     volumes:
       - ./config:/config
     ports:
-      - 3000:3000
-    shm_size: "1gb"
+      - "3000:3000"
+      - "3001:3001" # HTTPS port (optional)
+    devices:
+      - /dev/dri:/dev/dri # GPU acceleration (optional)
+    shm_size: "2gb"
     restart: unless-stopped
+    networks:
+      - ivms_network
+    security_opt:
+      - seccomp:unconfined # Required for Wine compatibility
+
+networks:
+  ivms_network:
+    driver: bridge
