@@ -11,10 +11,10 @@ RUN \
   echo "**** install wine and tools ****" && \
   apt-get update && \
   apt-get install -y \
-    wine \
-    wine32 \
-    winetricks \
-    p7zip-full && \
+  wine \
+  wine32 \
+  winetricks \
+  p7zip-full && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
@@ -29,5 +29,5 @@ RUN \
   rm /tmp/"iVMS-4200(V3.6.0.6_E).tar.gz.part"*
 
 # Metadata
-LABEL maintainer="Antigravity"
+LABEL maintainer="https://github.com/geokarlo/ivms4200-docker.git"
 LABEL description="iVMS-4200 in Docker using Wine and Webtop (noVNC)"
