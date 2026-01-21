@@ -1,0 +1,155 @@
+/config/.wine/drive_c/windows/system32/winedevice.exe
+/config/.wine/drive_c/windows/system32/ddhelp.exe
+/config/.wine/drive_c/windows/system32/dosx.exe
+/config/.wine/drive_c/windows/system32/start.exe
+/config/.wine/drive_c/windows/system32/winhlp32.exe
+/config/.wine/drive_c/windows/system32/explorer.exe
+/config/.wine/drive_c/windows/system32/iexplore.exe
+/config/.wine/drive_c/windows/system32/notepad.exe
+/config/.wine/drive_c/windows/system32/wbem/mofcomp.exe
+/config/.wine/drive_c/windows/system32/wbem/wmic.exe
+/config/.wine/drive_c/windows/system32/WindowsPowerShell/v1.0/powershell.exe
+/config/.wine/drive_c/windows/system32/arp.exe
+/config/.wine/drive_c/windows/system32/attrib.exe
+/config/.wine/drive_c/windows/system32/cabarc.exe
+/config/.wine/drive_c/windows/system32/cacls.exe
+/config/.wine/drive_c/windows/system32/certutil.exe
+/config/.wine/drive_c/windows/system32/clock.exe
+/config/.wine/drive_c/windows/system32/cmd.exe
+/config/.wine/drive_c/windows/system32/conhost.exe
+/config/.wine/drive_c/windows/system32/control.exe
+/config/.wine/drive_c/windows/system32/cscript.exe
+/config/.wine/drive_c/windows/system32/dism.exe
+/config/.wine/drive_c/windows/system32/dllhost.exe
+/config/.wine/drive_c/windows/system32/dplaysvr.exe
+/config/.wine/drive_c/windows/system32/dpnsvr.exe
+/config/.wine/drive_c/windows/system32/dpvsetup.exe
+/config/.wine/drive_c/windows/system32/dxdiag.exe
+/config/.wine/drive_c/windows/system32/eject.exe
+/config/.wine/drive_c/windows/system32/expand.exe
+/config/.wine/drive_c/windows/system32/extrac32.exe
+/config/.wine/drive_c/windows/system32/fc.exe
+/config/.wine/drive_c/windows/system32/find.exe
+/config/.wine/drive_c/windows/system32/findstr.exe
+/config/.wine/drive_c/windows/system32/fsutil.exe
+/config/.wine/drive_c/windows/system32/gdi.exe
+/config/.wine/drive_c/windows/system32/hostname.exe
+/config/.wine/drive_c/windows/system32/icacls.exe
+/config/.wine/drive_c/windows/system32/icinfo.exe
+/config/.wine/drive_c/windows/system32/ipconfig.exe
+/config/.wine/drive_c/windows/system32/klist.exe
+/config/.wine/drive_c/windows/system32/krnl386.exe
+/config/.wine/drive_c/windows/system32/lodctr.exe
+/config/.wine/drive_c/windows/system32/mshta.exe
+/config/.wine/drive_c/windows/system32/msidb.exe
+/config/.wine/drive_c/windows/system32/msiexec.exe
+/config/.wine/drive_c/windows/system32/msinfo32.exe
+/config/.wine/drive_c/windows/system32/net.exe
+/config/.wine/drive_c/windows/system32/netsh.exe
+/config/.wine/drive_c/windows/system32/netstat.exe
+/config/.wine/drive_c/windows/system32/ntoskrnl.exe
+/config/.wine/drive_c/windows/system32/oleview.exe
+/config/.wine/drive_c/windows/system32/ping.exe
+/config/.wine/drive_c/windows/system32/plugplay.exe
+/config/.wine/drive_c/windows/system32/pnputil.exe
+/config/.wine/drive_c/windows/system32/progman.exe
+/config/.wine/drive_c/windows/system32/reg.exe
+/config/.wine/drive_c/windows/system32/regini.exe
+/config/.wine/drive_c/windows/system32/regsvr32.exe
+/config/.wine/drive_c/windows/system32/robocopy.exe
+/config/.wine/drive_c/windows/system32/rpcss.exe
+/config/.wine/drive_c/windows/system32/rundll32.exe
+/config/.wine/drive_c/windows/system32/sc.exe
+/config/.wine/drive_c/windows/system32/schtasks.exe
+/config/.wine/drive_c/windows/system32/sdbinst.exe
+/config/.wine/drive_c/windows/system32/secedit.exe
+/config/.wine/drive_c/windows/system32/services.exe
+/config/.wine/drive_c/windows/system32/setx.exe
+/config/.wine/drive_c/windows/system32/shutdown.exe
+/config/.wine/drive_c/windows/system32/spoolsv.exe
+/config/.wine/drive_c/windows/system32/subst.exe
+/config/.wine/drive_c/windows/system32/svchost.exe
+/config/.wine/drive_c/windows/system32/systeminfo.exe
+/config/.wine/drive_c/windows/system32/taskkill.exe
+/config/.wine/drive_c/windows/system32/tasklist.exe
+/config/.wine/drive_c/windows/system32/taskmgr.exe
+/config/.wine/drive_c/windows/system32/termsv.exe
+/config/.wine/drive_c/windows/system32/uninstaller.exe
+/config/.wine/drive_c/windows/system32/unlodctr.exe
+/config/.wine/drive_c/windows/system32/user.exe
+/config/.wine/drive_c/windows/system32/view.exe
+/config/.wine/drive_c/windows/system32/wevtutil.exe
+/config/.wine/drive_c/windows/system32/where.exe
+/config/.wine/drive_c/windows/system32/whoami.exe
+/config/.wine/drive_c/windows/system32/wineboot.exe
+/config/.wine/drive_c/windows/system32/winebrowser.exe
+/config/.wine/drive_c/windows/system32/winecfg.exe
+/config/.wine/drive_c/windows/system32/wineconsole.exe
+/config/.wine/drive_c/windows/system32/winedbg.exe
+/config/.wine/drive_c/windows/system32/winefile.exe
+/config/.wine/drive_c/windows/system32/winemenubuilder.exe
+/config/.wine/drive_c/windows/system32/winemine.exe
+/config/.wine/drive_c/windows/system32/winemsibuilder.exe
+/config/.wine/drive_c/windows/system32/winepath.exe
+/config/.wine/drive_c/windows/system32/winevdm.exe
+/config/.wine/drive_c/windows/system32/winmgmt.exe
+/config/.wine/drive_c/windows/system32/winver.exe
+/config/.wine/drive_c/windows/system32/write.exe
+/config/.wine/drive_c/windows/system32/wscript.exe
+/config/.wine/drive_c/windows/system32/wuauserv.exe
+/config/.wine/drive_c/windows/system32/wusa.exe
+/config/.wine/drive_c/windows/system32/xcopy.exe
+/config/.wine/drive_c/windows/rundll.exe
+/config/.wine/drive_c/windows/winhelp.exe
+/config/.wine/drive_c/windows/winhlp32.exe
+/config/.wine/drive_c/windows/command/start.exe
+/config/.wine/drive_c/windows/explorer.exe
+/config/.wine/drive_c/windows/hh.exe
+/config/.wine/drive_c/windows/notepad.exe
+/config/.wine/drive_c/windows/regedit.exe
+/config/.wine/drive_c/Program Files/Internet Explorer/iexplore.exe
+/config/.wine/drive_c/Program Files/Windows Media Player/wmplayer.exe
+/config/.wine/drive_c/Program Files/Windows NT/Accessories/wordpad.exe
+/config/.wine/drive_c/Program Files/hik/update_server/unins000.exe
+/config/.wine/drive_c/Program Files/hik/update_server/SPUpDateServer.exe
+/config/.wine/drive_c/Program Files/hik/update_server/startUp.exe
+/config/.wine/drive_c/Program Files/hik/update_server/CrashReporter.exe
+/config/.wine/drive_c/ProgramData/Package Cache/{f65db027-aff3-4070-886a-0d87064aabb1}/vcredist_x86.exe
+/config/.wine/drive_c/ProgramData/Package Cache/{be826f5f-eda5-45a2-a3fe-c2cb5c1b9842}/VC_redist.x86.exe
+/config/.wine/drive_c/89270fc7e00af1b423ba/Setup.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/Drivers/NpfDetectApp.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/uninstall.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/Nginx/html/codebase/WebComponents.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/Nginx/html/WebCfgPackage/Packages/01/020/codebase/WebComponents.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/Nginx/nginx.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/Player/Player.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/UpgradeClient/UpgradeClient.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/autoRestart.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/CrashServerDamon.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Framework.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/Remote Configuration.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.DeviceManagement.C/iVMS-4200.DeviceManagement.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Log.C/iVMS-4200.Log.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.AlarmCenter.C/iVMS-4200.AlarmCenter.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Video.C/DecodeProcess/DecodeProcess.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Video.C/iVMS-4200.Video.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.AccessController.C/iVMS-4200.AccessController.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.PersonalManagement.C/iVMS-4200.PersonalManagement.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Attendance.C/iVMS-4200.Attendance.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Emap.C/iVMS-4200.Emap.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.DataStatistics.C/iVMS-4200.DataStatistics.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.AIDashboard.C/iVMS-4200.AIDashboard.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Client/iVMS-4200.Topology.C/iVMS-4200.Topology.C.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/CrashServerDamon.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.Framework.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/WatchDog.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.DeviceManagement.S/iVMS-4200.DeviceManagement.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.Log.S/iVMS-4200.Log.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.AlarmCenter.S/iVMS-4200.AlarmCenter.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.Video.S/iVMS-4200.Video.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.AccessController.S/iVMS-4200.AccessController.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.PersonalManagement.S/iVMS-4200.PersonalManagement.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.Attendance.S/iVMS-4200.Attendance.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.Emap.S/iVMS-4200.Emap.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.DataStatistics.S/iVMS-4200.DataStatistics.S.exe
+/config/.wine/drive_c/Program Files (x86)/iVMS-4200 Site/iVMS-4200 Client/Server/iVMS-4200.Topology.S/iVMS-4200.Topology.S.exe

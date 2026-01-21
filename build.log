@@ -1,0 +1,52 @@
+--progress is a global compose flag, better use `docker compose --progress xx build ...
+time="2026-01-21T22:39:54+08:00" level=warning msg="Docker Compose requires buildx plugin to be installed"
+ Image ivms4200:3.5.0.9 Building 
+ Image ivms4200:3.5.0.9 Building 
+Sending build context to Docker daemon  524.9kBSending build context to Docker daemon  2.624MBSending build context to Docker daemon  4.212MBSending build context to Docker daemon  5.786MBSending build context to Docker daemon  8.409MBSending build context to Docker daemon  9.983MBSending build context to Docker daemon  12.61MBSending build context to Docker daemon  15.23MBSending build context to Docker daemon  17.33MBSending build context to Docker daemon  19.95MBSending build context to Docker daemon  22.57MBSending build context to Docker daemon  25.72MBSending build context to Docker daemon  26.77MBSending build context to Docker daemon  28.34MBSending build context to Docker daemon  30.44MBSending build context to Docker daemon  30.97MBSending build context to Docker daemon  33.07MBSending build context to Docker daemon  35.17MBSending build context to Docker daemon  37.79MBSending build context to Docker daemon  40.41MBSending build context to Docker daemon  42.51MBSending build context to Docker daemon  45.66MBSending build context to Docker daemon  48.28MBSending build context to Docker daemon  51.43MBSending build context to Docker daemon  54.06MBSending build context to Docker daemon  57.73MBSending build context to Docker daemon   61.4MBSending build context to Docker daemon  65.08MBSending build context to Docker daemon  67.18MBSending build context to Docker daemon  70.85MBSending build context to Docker daemon  74.53MBSending build context to Docker daemon   76.1MBSending build context to Docker daemon  78.72MBSending build context to Docker daemon  81.34MBSending build context to Docker daemon  83.97MBSending build context to Docker daemon  87.64MBSending build context to Docker daemon  91.31MBSending build context to Docker daemon  93.93MBSending build context to Docker daemon   97.6MBSending build context to Docker daemon  101.3MBSending build context to Docker daemon  103.9MBSending build context to Docker daemon    107MBSending build context to Docker daemon  109.7MBSending build context to Docker daemon  113.3MBSending build context to Docker daemon    117MBSending build context to Docker daemon  120.2MBSending build context to Docker daemon  123.3MBSending build context to Docker daemon  126.4MBSending build context to Docker daemon  129.6MBSending build context to Docker daemon  133.3MBSending build context to Docker daemon  136.9MBSending build context to Docker daemon  141.1MBSending build context to Docker daemon  144.8MBSending build context to Docker daemon  148.5MBSending build context to Docker daemon  152.7MBSending build context to Docker daemon  156.3MBSending build context to Docker daemon    160MBSending build context to Docker daemon  163.2MBSending build context to Docker daemon  166.8MBSending build context to Docker daemon    171MBSending build context to Docker daemon  174.7MBSending build context to Docker daemon  178.4MBSending build context to Docker daemon    182MBSending build context to Docker daemon  185.7MBSending build context to Docker daemon  189.4MBSending build context to Docker daemon  193.1MBSending build context to Docker daemon  196.7MBSending build context to Docker daemon  200.4MBSending build context to Docker daemon  204.1MBSending build context to Docker daemon  207.7MBSending build context to Docker daemon  211.4MBSending build context to Docker daemon  215.1MBSending build context to Docker daemon  218.8MBSending build context to Docker daemon  222.4MBSending build context to Docker daemon  226.1MBSending build context to Docker daemon  230.3MBSending build context to Docker daemon    234MBSending build context to Docker daemon  238.2MBSending build context to Docker daemon  242.4MBSending build context to Docker daemon    246MBSending build context to Docker daemon  247.1MBSending build context to Docker daemon  248.1MBSending build context to Docker daemon  249.7MBSending build context to Docker daemon  251.8MBSending build context to Docker daemon  254.4MBSending build context to Docker daemon  257.6MBSending build context to Docker daemon  261.2MBSending build context to Docker daemon  264.9MBSending build context to Docker daemon  268.6MBSending build context to Docker daemon  272.3MBSending build context to Docker daemon  275.9MBSending build context to Docker daemon  279.6MBSending build context to Docker daemon  282.7MBSending build context to Docker daemon  284.9MB
+Step 1/13 : FROM lscr.io/linuxserver/webtop:ubuntu-xfce
+ ---> f311324fda0a
+Step 2/13 : ENV WINEPREFIX="/config/.wine"   WINEARCH="win32"   DISPLAY=:1
+ ---> Using cache
+ ---> 1b16362957e2
+Step 3/13 : RUN echo "**** add architecture i386 ****" &&   dpkg --add-architecture i386 &&   echo "**** install wine and tools ****" &&   apt-get update &&   apt-get install -y --no-install-recommends   wine   wine32   wine64   winetricks   cabextract   p7zip-full   zenity   xdotool   wmctrl   xvfb   libodbc2   libodbc2:i386 &&   echo "**** cleanup ****" &&   apt-get clean &&   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+ ---> Using cache
+ ---> 785cff68962e
+Step 4/13 : COPY "iVMS-4200(V3.5.0.9_E).tar.gz.part"* /tmp/
+ ---> e02cadc43ce0
+Step 5/13 : RUN echo "**** reassemble installer ****" &&   cat /tmp/"iVMS-4200(V3.5.0.9_E).tar.gz.part"* | tar -xzv -C /tmp/ &&   rm -f /tmp/"iVMS-4200(V3.5.0.9_E).tar.gz.part"* &&   echo "**** installer ready at /tmp/iVMS-4200(V3.5.0.9_E).exe ****"
+ ---> Running in ef1f33c2fc35
+**** reassemble installer ****
+iVMS-4200(V3.5.0.9_E).exe
+**** installer ready at /tmp/iVMS-4200(V3.5.0.9_E).exe ****
+ ---> Removed intermediate container ef1f33c2fc35
+ ---> a9917f0945cc
+Step 6/13 : COPY install-ivms.sh /usr/local/bin/install-ivms.sh
+ ---> 5c31d66e4e95
+Step 7/13 : COPY autostart-ivms.sh /usr/local/bin/autostart-ivms.sh
+ ---> b25e0c16be42
+Step 8/13 : COPY custom-services.d/ivms-init /etc/services.d/ivms-init/run
+ ---> ef61f0a9a3ce
+Step 9/13 : RUN chmod +x /usr/local/bin/install-ivms.sh &&   chmod +x /usr/local/bin/autostart-ivms.sh &&   chmod +x /etc/services.d/ivms-init/run
+ ---> Running in 1e853b2c30a4
+ ---> Removed intermediate container 1e853b2c30a4
+ ---> 9c1c8f27770e
+Step 10/13 : RUN rm -rf /defaults/autostart &&   mkdir -p /defaults/autostart &&   echo "[Desktop Entry]" > /defaults/autostart/ivms4200.desktop &&   echo "Type=Application" >> /defaults/autostart/ivms4200.desktop &&   echo "Name=iVMS-4200" >> /defaults/autostart/ivms4200.desktop &&   echo "Exec=/usr/local/bin/autostart-ivms.sh" >> /defaults/autostart/ivms4200.desktop &&   echo "Hidden=false" >> /defaults/autostart/ivms4200.desktop &&   echo "NoDisplay=false" >> /defaults/autostart/ivms4200.desktop &&   echo "X-GNOME-Autostart-enabled=true" >> /defaults/autostart/ivms4200.desktop
+ ---> Running in 10a236b7cbfa
+ ---> Removed intermediate container 10a236b7cbfa
+ ---> aaa4fc950650
+Step 11/13 : EXPOSE 3000
+ ---> Running in c0ebcdccd0a6
+ ---> Removed intermediate container c0ebcdccd0a6
+ ---> 222e619711ed
+Step 12/13 : LABEL maintainer="https://github.com/geokarlo/ivms4200-docker.git"   description="iVMS-4200 v3.5.0.9 in Docker using Wine and Webtop (noVNC) with automated installation"   version="3.5.0.9"
+ ---> Running in 0a937444e298
+ ---> Removed intermediate container 0a937444e298
+ ---> 22639a7d8c10
+Step 13/13 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 237958b71249
+ ---> Removed intermediate container 237958b71249
+ ---> 714b3051c23d
+Successfully built 714b3051c23d
+Successfully tagged ivms4200:3.5.0.9
+ Image ivms4200:3.5.0.9 Built 
+ Image ivms4200:3.5.0.9 Built 
